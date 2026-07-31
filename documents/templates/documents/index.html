@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notebook — Document Q&A</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,600;0,700;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'documents/css/style.css' %}" />
+</head>
+<body>
+  <div class="app-shell">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">
+          <span class="glyph">”</span>
+          <h1>Notebook</h1>
+        </div>
+        <p>Ask questions and get answers grounded in your own notes.</p>
+      </div>
+
+      <label class="upload-zone" id="upload-zone" tabindex="0">
+        <span class="upload-icon">＋</span>
+        <span class="upload-label">Upload notes</span>
+        <span class="upload-sub">PDF or DOCX, up to 15MB</span>
+        <input type="file" id="file-input" accept=".pdf,.docx" />
+      </label>
+
+      <div class="doc-list" id="doc-list"></div>
+    </aside>
+
+    <main class="main">
+      <div class="chat-header">
+        <div>
+          <h2 id="chat-header-title">Document Q&A</h2>
+          <div class="subtitle" id="chat-header-sub">Upload notes to begin</div>
+        </div>
+        <span class="pill">RAG · FAISS · OpenAI</span>
+      </div>
+
+      <div class="chat-scroll" id="chat-scroll">
+        <div class="chat-inner" id="chat-inner"></div>
+      </div>
+
+      <div class="composer">
+        <form class="composer-inner" id="composer">
+          <textarea id="question-input" rows="1" disabled placeholder="Select a ready document to start chatting…"></textarea>
+          <button type="submit" class="send-btn" id="send-btn" disabled aria-label="Send question">↑</button>
+        </form>
+        <div class="composer-hint">Enter to send · Shift+Enter for a new line</div>
+      </div>
+    </main>
+
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="{% static 'documents/js/app.js' %}"></script>
+</body>
+</html>

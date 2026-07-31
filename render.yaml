@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: document-qa-bot
+    runtime: python
+    plan: free
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn qa_bot.wsgi:application"
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_DEBUG
+        value: "False"
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: EMBEDDING_MODEL
+        value: models/gemini-embedding-001
+      - key: CHAT_MODEL
+        value: models/gemini-flash-latest
+      - key: CHUNK_SIZE_TOKENS
+        value: "350"
+      - key: CHUNK_OVERLAP_TOKENS
+        value: "50"
+      - key: TOP_K_CHUNKS
+        value: "4"
+      - key: PYTHON_VERSION
+        value: 3.12.4

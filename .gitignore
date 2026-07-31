@@ -1,0 +1,21 @@
+# Environment
+.env
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Django
+db.sqlite3
+media/uploads/*
+!media/uploads/.gitkeep
+
+# Vector indexes (generated data, not source)
+vector_indexes/*
+!vector_indexes/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.log
