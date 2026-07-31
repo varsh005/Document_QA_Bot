@@ -249,4 +249,8 @@ I built this project to learn the core ideas behind **production RAG systems**:
 
 The goal was to create a **lightweight, self-contained document assistant** without relying on an external vector database.
 
+---
+## 📃 License
+This project is built for educational/portfolio purposes
+
 
