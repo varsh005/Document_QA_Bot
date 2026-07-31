@@ -17,12 +17,12 @@ Upload your notes (PDF or DOCX) and ask questions about them. Answers are genera
 
 ---
 
-## Live Demo link:
+## 🌐 Live Demo link:
 https://document-qa-bot-ed0q.onrender.com
 
 ---
 
-## 🖼️ Screenshots
+## 📸 Screenshots
 
 ### 🏠 Home Page
 ![Home](Screenshots/Home.png)
@@ -48,6 +48,8 @@ https://document-qa-bot-ed0q.onrender.com
 4. **Generation** — those chunks are passed to Gemini along with your question,
    with instructions to answer only from that context.
 
+---
+
 ## 🛠️ Tech stack
 
 - **Backend:** Django 5 + Django REST Framework
@@ -55,6 +57,8 @@ https://document-qa-bot-ed0q.onrender.com
 - **LLM:** Google Gemini API (`models/gemini-embedding-001` + `models/gemini-flash-latest` by default) - free tier, no credit card required
 - **Frontend:** vanilla HTML/CSS/JS, served directly by Django (no build step)
 - **Database:** SQLite (swap for Postgres in production by changing `DATABASES`)
+
+---
 
 ## ⚙️ Setup
 
@@ -98,6 +102,8 @@ python manage.py runserver
 
 Visit **http://127.0.0.1:8000/** — upload a PDF or DOCX from the sidebar,
 wait for it to finish indexing, then start asking questions.
+
+---
 
 ## 📁 Project structure
 
@@ -170,6 +176,8 @@ If you want data to persist properly, you have two upgrade paths:
   point (e.g. `/var/data/media`, `/var/data/vector_indexes`). This is the
   right setup for anything beyond a demo.
 
+---
+
 ## ⚠️ Notes & known limitations
 
 - Scanned/image-only PDFs aren't supported (no OCR yet) — text-based PDFs and
@@ -186,6 +194,8 @@ If you want data to persist properly, you have two upgrade paths:
 - No authentication yet — all documents are currently visible to anyone
   using the app. Add Django auth + scope documents to `request.user` before
   deploying anywhere public.
+
+---
 
 ## 🔑 Environment variables
 
@@ -239,4 +249,4 @@ I built this project to learn the core ideas behind **production RAG systems**:
 
 The goal was to create a **lightweight, self-contained document assistant** without relying on an external vector database.
 
----
+
