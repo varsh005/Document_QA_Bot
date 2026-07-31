@@ -16,6 +16,8 @@ Upload your notes (PDF or DOCX) and ask questions about them. Answers are genera
 - 🗑️ Delete documents and chat history
 
 ---
+## 🌐 Live Demo : https://document-qa-bot-ed0q.onrender.com
+---
 
 ## 🖼️ Screenshots
 
