@@ -24,17 +24,17 @@ https://document-qa-bot-ed0q.onrender.com
 
 ## 📸 Screenshots
 
-### 🏠 Home Page
-![Home](Screenshots/Home.png)
+### Home Page
+![Home](screenshots/Home.png)
 
 ### 📊 Analysis Page
-![Analysis](Screenshots/analysis.png)
+![Analysis](screenshots/analysis.png)
 
 ### 💬 Stored Chat Page
-![Stored Chat](Screenshots/stores-chat.png)
+![Stored Chat](screenshots/stores-chat.png)
 
 ### 🗑️ Delete Chat Page
-![Delete Chat](Screenshots/delete-chat.png)
+![Delete Chat](screenshots/delete-chat.png)
 
 ---
 ## 🔍 How it works
@@ -228,11 +228,11 @@ the exact name of one from each into your `.env` file.
 
 ## 🔮 Future Improvements
 
-- 🔐 User authentication
-- 📥 Background processing with Celery
-- 🖼️ OCR for scanned PDFs
-- ☁️ Qdrant / Pinecone support
-- 📝 Conversation memory
+-  User authentication
+-  Background processing with Celery
+-  OCR for scanned PDFs
+-  Qdrant / Pinecone support
+-  Conversation memory
 
 ---
 
